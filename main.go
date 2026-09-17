@@ -15,6 +15,7 @@ func conEs() {
 		notas += notaE
 	}
 	fmt.Println(averageGrade(nEstudiantes, notas))
+	main()
 
 }
 func averageGrade(numEst int, grades float64) float64 {
@@ -30,6 +31,7 @@ func sum() {
 		sumatoria += i
 	}
 	fmt.Println(sumatoria)
+	main()
 }
 
 func CaF() {
@@ -38,6 +40,7 @@ func CaF() {
 	fmt.Scan(&celcius)
 	faren := (celcius * 1.8) + 32
 	fmt.Println(faren)
+	main()
 }
 
 func FaC() {
@@ -46,6 +49,7 @@ func FaC() {
 	fmt.Scan(&faren)
 	celcius := (faren - 32) * 5 / 9
 	fmt.Println(celcius)
+	main()
 }
 
 func main() {
