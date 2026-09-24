@@ -14,15 +14,15 @@ func Contar() {
 	frase := scanner.Text()
 	for _, v := range frase {
 		switch v {
-		case 'a', 'A':
+		case 'a', 'A', 'á', 'Á':
 			voA++
-		case 'e', 'E':
+		case 'e', 'E', 'é', 'É':
 			voE++
-		case 'i', 'I':
+		case 'i', 'I', 'í', 'Í':
 			voI++
-		case 'o', 'O':
+		case 'o', 'O', 'ó', 'Ó':
 			voO++
-		case 'u', 'U':
+		case 'u', 'U', 'ú', 'Ú', 'ü', 'Ü':
 			voU++
 		}
 	}
