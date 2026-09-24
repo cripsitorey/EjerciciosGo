@@ -1,12 +1,17 @@
 package vocales
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func Contar() {
-	frase := ""
 	var voA, voE, voI, voO, voU int
 	fmt.Println("Escribe una frase para contar sus vocales: ")
-	fmt.Scan(&frase)
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	frase := scanner.Text()
 	for _, v := range frase {
 		switch v {
 		case 'a', 'A':
