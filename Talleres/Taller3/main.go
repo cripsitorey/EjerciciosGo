@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"academico/votos"
+	"fmt"
+)
 
 func ejecutarNotas() {
 	var notas [6][4]float64
@@ -52,6 +55,7 @@ func main() {
 
 	fmt.Println("\n===== MENU PRINCIPAL =====")
 	fmt.Println("1. Notas de estudiantes")
+	fmt.Println("2. Votos")
 	fmt.Println("0. Salir")
 	fmt.Println("Elige una opcion: ")
 	fmt.Scan(&opcion)
@@ -60,6 +64,8 @@ func main() {
 	case 1:
 		ejecutarNotas()
 		main()
+	case 2:
+		votos.ContarVotos()
 	case 0:
 		fmt.Println("Hasta luego")
 		break
